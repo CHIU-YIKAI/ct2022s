@@ -460,7 +460,15 @@
 				/** autoload font data */
 				/** Your code goes here */
                 /***/
-				d3.request('./SourceHanSerif-Heavy.ttf')
+				// d3.request('./SourceHanSerif-Heavy.ttf')
+                //     .responseType('arraybuffer')
+                //     .get(function(d){
+                //         openTypeFont = opentype.parse(d.response);
+                //     })
+                // ;
+				
+
+				d3.request("https://fonts.gstatic.com/ea/cwtexkai/v3/cwTeXKai-zhonly.ttf")
                     .responseType('arraybuffer')
                     .get(function(d){
                         openTypeFont = opentype.parse(d.response);
@@ -500,7 +508,7 @@
 			})
 		;
 
-		var so = new ScoreOutputer("111111111");
+		var so = new ScoreOutputer("110598025");
 		so.installCSS(function(){
 			// 安裝 bootstrap 的 css，如果在 html 上方引用 bootstrap 5.1.1 的話就不用使用 installCSS ，注意一定要 bootstrap css 5.1.1 版
 			// installCSS 接收一個 callback 當作參數，作為成功安裝 bootstrap css 的回呼函式
