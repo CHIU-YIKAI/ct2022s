@@ -460,21 +460,13 @@
 				/** autoload font data */
 				/** Your code goes here */
                 /***/
-				// d3.request('./SourceHanSerif-Heavy.ttf')
-                //     .responseType('arraybuffer')
-                //     .get(function(d){
-                //         openTypeFont = opentype.parse(d.response);
-                //     })
-                // ;
-				
-
-				d3.request("https://fonts.gstatic.com/ea/cwtexkai/v3/cwTeXKai-zhonly.ttf")
+				d3.request('./SourceHanSerif-Heavy.ttf')
                     .responseType('arraybuffer')
                     .get(function(d){
                         openTypeFont = opentype.parse(d.response);
                     })
                 ;
-
+				
 				/** font selection */
 				/** Your code goes here */
                 /***/
