@@ -463,10 +463,11 @@
 				d3.request('./SourceHanSerif-Heavy.ttf')
                     .responseType('arraybuffer')
                     .get(function(d){
-                        openTypeFont = opentype.parse(d.response);
+                        openTypeFont = opentype.parse(d.response)
+						console.log('end autoload font data...')
                     })
                 ;
-				
+
 				/** font selection */
 				/** Your code goes here */
                 /***/
