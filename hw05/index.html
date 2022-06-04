@@ -41,7 +41,7 @@
 			background-color: wheat;
 			height: 600px;
 			margin: 10px;
-			font-family: Medium; /*需對應下方 font-face Medium Baseline 字型的名稱*/
+			font-family: myfont; /*需對應下方 font-face Medium Baseline 字型的名稱*/
 		}
 
 		#strong-baseline {
@@ -49,18 +49,18 @@
 			background-color: #FB9966;
 			height: 600px;
 			margin: 10px;
-			font-family: Strong; /*需對應下方 font-face Strong Baseline 字型的名稱*/
+			font-family: myfont; /*需對應下方 font-face Strong Baseline 字型的名稱*/
 		}
 
 		@font-face {
 			/* font-family: "cjkFonts 全瀨體"; Medium Baseline 字型的名稱 */
-			font-family: "cjkFonts 全瀨體"; /* Medium Baseline 字型的名稱 */
-			src: url(./cjkFonts.ttf);
+			font-family: "myfont"; /* Medium Baseline 字型的名稱 */
+			src: url(./myfont.ttf);
 		}
 
 		@font-face {
-			font-family: "cjkFonts"; /*Strong Baseline 字型的名稱*/
-			src: url(./cjkFonts.ttf);
+			font-family: "myfont"; /*Strong Baseline 字型的名稱*/
+			src: url(./myfont.ttf);
 		}
 	</style>
 </head>
@@ -73,8 +73,8 @@
 		<img class="img-fluid img-thumbnail" src="./simple/inferred_0009.png" alt="圖1">
 		<img class="img-fluid img-thumbnail" src="./simple/inferred_0019.png" alt="圖2">
 		<img class="img-fluid img-thumbnail" src="./simple/inferred_0029.png" alt="圖3">
-		<img class="img-fluid img-thumbnail" src="./simple/inferred_0039.png" alt="圖4">
-		<img class="img-fluid img-thumbnail" src="./simple/inferred_0042.png" alt="圖5" id="img-last">
+		<img class="img-fluid img-thumbnail" src="./simple/inferred_0039.png" alt="圖4" id = img-last>
+		<!-- <img class="img-fluid img-thumbnail" src="./simple/inferred_0042.png" alt="圖5" id="img-last"> -->
     </div>
 
 	<div id="medium-baseline" class="container-fluid">
