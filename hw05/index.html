@@ -30,7 +30,7 @@
 		}
 
 		.link:hover { color: #FB9966 !important;}
-		
+
 		#simple-baseline {
 			border: rgb(25, 199, 25) solid 3px;
 			margin: 10px;
@@ -54,14 +54,14 @@
 
 		@font-face {
 			/* font-family: "cjkFonts 全瀨體"; Medium Baseline 字型的名稱 */
-			font-family: "myfont"; /* Medium Baseline 字型的名稱 */
+			font-family: myfont; /* Medium Baseline 字型的名稱 */
 			src: url(./myfont.ttf);
 		}
 
-		@font-face {
-			font-family: "myfont"; /*Strong Baseline 字型的名稱*/
+		/* @font-face {
+			font-family: "myfont"; /*Strong Baseline 字型的名稱
 			src: url(./myfont.ttf);
-		}
+		} */
 	</style>
 </head>
 <body>
@@ -114,7 +114,7 @@
 		在天願作比翼鳥，在地願為連理枝。天長地久有時盡，此恨綿綿無絕期。<br>
 	</div>
 
-	
+
 	<div id="strong-baseline" class="container-fluid">
         字體設計與文字編碼 <br><br>
 
@@ -162,12 +162,12 @@
 	<script src="https://cdn.jsdelivr.net/gh/t109598105/ScoreOutputer@latest/dist/scoreoutputer.min.js"></script>
 
     <script>
-		
+
         var so = new ScoreOutputer("111111111");
 		so.installCSS(function(){
 			// 安裝 bootstrap 的 css，如果在 html 上方引用 bootstrap 5.1.1 的話就不用使用 installCSS ，注意一定要 bootstrap css 5.1.1 版
 			// installCSS 接收一個 callback 當作參數，作為成功安裝 bootstrap css 的回呼函式
-		
+
 			//加入項目，分數，完成狀況
 			//第一個參數為 項目名稱
 			//第2個參數為 項目分數
@@ -183,20 +183,20 @@
 				//1. 自評表插入位置 (預設 document.body)
 				document.body,
 				//2. 自評表背景 (預設紅色)
-				'rgba(100,45,58,1)', 
+				'rgba(100,45,58,1)',
 				//3. 自評表文字顏色 (預設白色)
-				'white', 
+				'white',
 				//4. 自評表文字大小 (預設 14pt)
-				'15pt', 
+				'15pt',
 				//5. 自評表 checkbox 文字大小 (預設多少忘了)
-				'15px', 
+				'15px',
 				//6. 自評表標題 (預設 "自我評分表")
 				'自我評分表'
 			);
-			
+
 			//設定下載按鈕 <-- 一定要呼叫這個函數，不然沒有下載功能
 			so.installDownloadBtn();
-			
+
 			//產生 "開啟自評表按鈕"
 			so.renderBtn(
 				//自評表按鈕插入位置
